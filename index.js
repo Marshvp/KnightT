@@ -32,7 +32,7 @@ function knightMoves(start, end) {
         let[x, y] = currentPos;
 
         if(x ===end[0] && y === end[1]) {
-            return `Shortest Path is: ${path.map(pos => `(${pos})`).join(' -> ')}`
+            return `Shortest Path is: ${path.map(pos => `[${pos}]`).join(' -> ')}`
         }
         knight_moves.forEach(([dx, dy]) => {
             let nextX = x + dx;
